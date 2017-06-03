@@ -1,0 +1,9 @@
+language: java
+branches:
+only: master
+notifications:
+email:
+recipients:
+luisem0011@gmail.com
+jdk: oraclejdk8
+script: mvn clean install
