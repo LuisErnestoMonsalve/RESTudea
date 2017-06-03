@@ -37,14 +37,14 @@ public class CustomerFacadeREST extends AbstractFacade<Customer> {
 
     @POST
     @Override
-    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Consumes({MediaType.APPLICATION_JSON})
     public void create(Customer entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
-    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Consumes({MediaType.APPLICATION_JSON})
     public void edit(@PathParam("id") Integer id, Customer entity) {
         super.edit(entity);
     }
